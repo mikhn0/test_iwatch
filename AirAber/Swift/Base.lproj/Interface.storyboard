@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GDo-1M-ZIX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Flight-->
+        <scene sceneID="VrQ-qS-sSR">
+            <objects>
+                <controller identifier="Flight" id="GDo-1M-ZIX" customClass="FlightInterfaceController" customModule="Swift_Extension">
+                    <items>
+                        <group width="136" height="48" alignment="left" id="0vb-Pc-A6K">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="6DY-iQ-qgb">
+                                    <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="f2s-Fp-Hxd">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="Tc4-8q-7s3">
+                                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MAN to SFO" id="i2i-vc-8bz"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="8qu-4y-YYF">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="zhH-v0-BTf"/>
+                                <label height="44" alignment="left" text="15:06" id="PiA-1H-ebY">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On time" id="TrM-Ou-Sj4">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="YHP-hx-pZY">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" id="4Si-WO-HFj"/>
+                                        <label alignment="right" text="Seat 64A" id="4Jg-t4-AKd"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="PiA-1H-ebY" id="27B-j7-XNK"/>
+                        <outlet property="boardingLabel" destination="zhH-v0-BTf" id="wFo-bh-c9q"/>
+                        <outlet property="flightLabel" destination="Tc4-8q-7s3" id="geC-Dv-WQa"/>
+                        <outlet property="gateLabel" destination="4Si-WO-HFj" id="xOp-Zx-kse"/>
+                        <outlet property="routeLabel" destination="i2i-vc-8bz" id="el1-WA-Mlf"/>
+                        <outlet property="seatLabel" destination="4Jg-t4-AKd" id="FUK-sh-7TW"/>
+                        <outlet property="statusLabel" destination="TrM-Ou-Sj4" id="wZr-0V-xAR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="231" y="320"/>
+        </scene>
+    </scenes>
+</document>
